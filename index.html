@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desa Rempoah</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    background-color: #212529; /* Warna navbar */
+  }
+
+  nav a.navbar-brand {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+  }
+
+  nav .navbar-toggler {
+    border: 1px solid #ccc; /* Warna border tombol toggle */
+  }
+
+  nav .navbar-toggler-icon {
+    background-color: white; /* Warna ikon toggle */
+  }
+
+  nav ul.navbar-nav .nav-item .nav-link {
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+
+  nav ul.navbar-nav .nav-item .nav-link:hover {
+    color: #f39c12; /* Warna hover */
+  }
+
+  /* Menyembunyikan bagian lain selain Home */
+  section {
+    display: none;
+  }
+
+  #banner {
+    display: block; /* Menampilkan bagian Home */
+    background: url("http://thevillagepurwokerto.my.id/wp-content/uploads/2022/07/The-Village-Baturaden-Purwokerto-Adien-Akhmad.jpg")
+      no-repeat center center;
+    background-size: cover;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    color: #fff;
+  }
+</style>
+
+  </head>
+  <body>
+    <!-- Navigasi -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Kecamatan Baturraden</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#banner">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tentang">Tentang Desa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#peta-wilayah">Peta Wilayah</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#DeskripsiPetaInteraktif">Deskripsi Peta</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Konten -->
+   <section id="banner" class="banner">
+  <div class="container text-center">
+    <h5 class="display-6">Selamat Datang di Website Peta Wilayah Baturraden</h5>
+    <h3 class="display-1">Halo Sedulur</h3>
+    <a href="peta.html">
+      <button type="button" class="btn btn-danger btn-lg mt-3">
+        Peta Wilayah
+      </button>
+    </a>
+  </div>
+</section>
+
+
+    <section id="tentang" style="height: 100vh; background: #eaeaea;">
+      <div class="container text-center">
+        <h2 class="display-4 text-center">Tentang</h2>
+        <p class="text-center">Seputar Desa Rempoah dan Desa Kebumen</p>
+        <p class="pt-4">
+          Desa Rempoah merupakan salah satu desa yang terletak di Kecamatan Baturraden, Kabupaten Banyumas, Jawa Tengah. Desa ini terdiri dari 37 Rukun Tetangga (RT) dan 7 Rukun Warga (RW), yang mencerminkan pembagian wilayah administratif untuk mempermudah pengelolaan masyarakat serta pelayanan publik.
+        </p>
+        <p>
+          Dengan jumlah RT dan RW yang cukup banyak, Desa Rempoah memiliki potensi interaksi sosial yang kuat di tingkat lokal. Desa ini berada di kawasan strategis karena dekat dengan destinasi wisata Baturraden yang populer, sehingga memiliki peluang untuk mengembangkan sektor pariwisata, ekonomi kreatif, dan budaya lokal.
+        </p>
+        <p class="pt-4">
+          Desa Kebumen, yang terletak di Kecamatan Baturraden, Kabupaten Banyumas, adalah sebuah desa yang kaya akan potensi dan keindahan alam. Dengan jumlah 28 Rukun Tetangga (RT) dan 4 Rukun Warga (RW), Desa Kebumen memiliki struktur sosial yang erat, di mana setiap warganya saling mendukung dalam berbagai kegiatan. Desa ini terkenal dengan suasana yang tenang dan asri, serta memiliki berbagai fasilitas yang mendukung kehidupan warganya, seperti tempat ibadah, sekolah, dan fasilitas kesehatan yang mudah dijangkau.
+        </p>
+        <p class="pt-4">
+          asyarakat Desa Kebumen memiliki kehidupan yang harmonis, di mana kegiatan gotong royong dan kebersamaan menjadi nilai yang sangat dijunjung tinggi. Desa ini juga dilengkapi dengan akses jalan yang memadai, sehingga memudahkan mobilitas penduduk serta pengunjung yang datang. Dari segi pertanian, sebagian besar penduduk Desa Kebumen menggantungkan hidup pada sektor ini, dengan sawah dan kebun yang menjadi sumber utama mata pencaharian
+        </p>
+      
+      </div>
+      <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      Created By Ifan Dwi Ramadan : 2024
+    </footer>
+    </section>
+
+    <section id="peta-wilayah" style="height: 100vh; background: #d8d8d8;">
+      <div class="container-fluid bg-light py-5" id="peta-wilayah"></div>
+      <div class="container text-center">
+        <h2 class="display-4">Peta Wilayah</h2>
+        <p>Berikut adalah peta wilayah yang dapat membantu Anda menemukan area tertentu.</p>
+        <iframe
+          src="peta.html"
+          class="w-100"
+          height="600"
+          style="border: none"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      Created By Ifan Dwi Ramadan : 2024
+    </footer>
+    </section>
+
+   <section id="DeskripsiPetaInteraktif" style="height: 100vh; background: #f4f4f4;">
+  <div class="container text-center">
+    <h2 class="display-4 text-center mb-4">Deskripsi Peta Interaktif</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10">
+        <p class="lead">
+          Peta interaktif Desa Rempoah dan Desa Kebumen, Kecamatan Baturraden, merupakan inovasi digital yang memudahkan penggunanya untuk menjelajahi dan memahami berbagai informasi geografis serta demografis kedua desa tersebut. Dengan peta ini, pengguna dapat dengan mudah menavigasi wilayah desa, termasuk mengetahui batas wilayah serta pembagian Rukun Tetangga (RT) dan Rukun Warga (RW) yang ada. Selain itu, peta ini juga menyajikan informasi lengkap mengenai lokasi fasilitas umum seperti kantor desa, sekolah, puskesmas, tempat ibadah, dan berbagai sarana penting lainnya, memberikan gambaran menyeluruh tentang kehidupan di kedua desa. Setiap area RT dan RW ditandai dengan warna khusus yang dapat diklik untuk menampilkan informasi lengkap.
+        </p>
+        <p class="lead">
+          Peta ini dilengkapi dengan fitur pencarian lokasi yang memudahkan pengguna menemukan tempat atau alamat tertentu hanya dalam beberapa klik. Setiap titik pada peta dapat di-klik untuk menampilkan informasi lebih mendalam. Dengan adanya peta interaktif ini, diharapkan dapat memperlancar akses informasi bagi warga setempat.
+        </p>
+        <p class="lead">
+          Peta interaktif ini juga bertujuan untuk mempererat hubungan antara warga dan pihak pemerintahan desa. Dengan tampilan yang user-friendly, setiap warga desa dapat dengan mudah mengakses informasi yang mereka butuhkan, mulai dari lokasi rumah hingga fasilitas yang tersedia di sekitar mereka. Selain itu, peta ini juga membuka kesempatan bagi pengunjung dan pihak luar untuk lebih mengenal keunikan kedua desa, baik dari segi geografis, sosial, maupun budaya. Dengan adanya fitur ini, setiap orang dapat merasakan kemudahan dalam berinteraksi dengan lingkungan sekitar, yang akan memperkuat rasa kebersamaan dan keterlibatan masyarakat dalam pembangunan desa.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      Created By Ifan Dwi Ramadan : 2024
+    </footer>
+</section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // JavaScript untuk menampilkan bagian sesuai menu yang diklik
+      const links = document.querySelectorAll('.nav-link');
+      links.forEach(link => {
+        link.addEventListener('click', (e) => {
+          // Menyembunyikan semua section
+          document.querySelectorAll('section').forEach(section => {
+            section.style.display = 'none';
+          });
+
+          // Menampilkan section yang sesuai dengan ID
+          const targetId = e.target.getAttribute('href').substring(1);
+          const targetSection = document.getElementById(targetId);
+          targetSection.style.display = 'block';
+
+          // Menutup navbar di layar kecil
+          const navbar = document.querySelector('.navbar-collapse');
+          if (navbar.classList.contains('show')) {
+            const bsCollapse = new bootstrap.Collapse(navbar);
+            bsCollapse.hide();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
